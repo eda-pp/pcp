@@ -36,16 +36,16 @@ Partial Class Form1
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenFilesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PanelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SaveAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SaveLocalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SaveGoodRSSIToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.DeviceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveAllToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveNotLocalToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveMismatchToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveGoodRSSIToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveLowRSSIToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PanelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveLocalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveGoodRSSIToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveEverythingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -174,10 +174,13 @@ Partial Class Form1
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
+        Me.TextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
         Me.TextBox1.Size = New System.Drawing.Size(363, 116)
         Me.TextBox1.TabIndex = 17
         Me.TextBox1.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "No Files Selected"
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TextBox1.WordWrap = False
         '
         'MenuStrip1
         '
@@ -209,36 +212,11 @@ Partial Class Form1
         Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
         Me.SaveToolStripMenuItem.Text = "Save Individual"
         '
-        'PanelToolStripMenuItem
-        '
-        Me.PanelToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveAllToolStripMenuItem, Me.SaveLocalToolStripMenuItem, Me.SaveGoodRSSIToolStripMenuItem1})
-        Me.PanelToolStripMenuItem.Name = "PanelToolStripMenuItem"
-        Me.PanelToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.PanelToolStripMenuItem.Text = "Panel"
-        '
-        'SaveAllToolStripMenuItem
-        '
-        Me.SaveAllToolStripMenuItem.Name = "SaveAllToolStripMenuItem"
-        Me.SaveAllToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
-        Me.SaveAllToolStripMenuItem.Text = "Save All"
-        '
-        'SaveLocalToolStripMenuItem
-        '
-        Me.SaveLocalToolStripMenuItem.Name = "SaveLocalToolStripMenuItem"
-        Me.SaveLocalToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
-        Me.SaveLocalToolStripMenuItem.Text = "Save Local"
-        '
-        'SaveGoodRSSIToolStripMenuItem1
-        '
-        Me.SaveGoodRSSIToolStripMenuItem1.Name = "SaveGoodRSSIToolStripMenuItem1"
-        Me.SaveGoodRSSIToolStripMenuItem1.Size = New System.Drawing.Size(155, 22)
-        Me.SaveGoodRSSIToolStripMenuItem1.Text = "Save Good RSSI"
-        '
         'DeviceToolStripMenuItem
         '
         Me.DeviceToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveAllToolStripMenuItem1, Me.SaveNotLocalToolStripMenuItem1, Me.SaveMismatchToolStripMenuItem1, Me.SaveGoodRSSIToolStripMenuItem2, Me.SaveLowRSSIToolStripMenuItem1})
         Me.DeviceToolStripMenuItem.Name = "DeviceToolStripMenuItem"
-        Me.DeviceToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DeviceToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
         Me.DeviceToolStripMenuItem.Text = "Device"
         '
         'SaveAllToolStripMenuItem1
@@ -270,6 +248,31 @@ Partial Class Form1
         Me.SaveLowRSSIToolStripMenuItem1.Name = "SaveLowRSSIToolStripMenuItem1"
         Me.SaveLowRSSIToolStripMenuItem1.Size = New System.Drawing.Size(155, 22)
         Me.SaveLowRSSIToolStripMenuItem1.Text = "Save Low RSSI"
+        '
+        'PanelToolStripMenuItem
+        '
+        Me.PanelToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveAllToolStripMenuItem, Me.SaveLocalToolStripMenuItem, Me.SaveGoodRSSIToolStripMenuItem1})
+        Me.PanelToolStripMenuItem.Name = "PanelToolStripMenuItem"
+        Me.PanelToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
+        Me.PanelToolStripMenuItem.Text = "Panel"
+        '
+        'SaveAllToolStripMenuItem
+        '
+        Me.SaveAllToolStripMenuItem.Name = "SaveAllToolStripMenuItem"
+        Me.SaveAllToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
+        Me.SaveAllToolStripMenuItem.Text = "Save All"
+        '
+        'SaveLocalToolStripMenuItem
+        '
+        Me.SaveLocalToolStripMenuItem.Name = "SaveLocalToolStripMenuItem"
+        Me.SaveLocalToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
+        Me.SaveLocalToolStripMenuItem.Text = "Save Local"
+        '
+        'SaveGoodRSSIToolStripMenuItem1
+        '
+        Me.SaveGoodRSSIToolStripMenuItem1.Name = "SaveGoodRSSIToolStripMenuItem1"
+        Me.SaveGoodRSSIToolStripMenuItem1.Size = New System.Drawing.Size(155, 22)
+        Me.SaveGoodRSSIToolStripMenuItem1.Text = "Save Good RSSI"
         '
         'SaveEverythingToolStripMenuItem
         '
