@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 14 for Windows Desktop
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PanComPlus 1_0", "PanComPlus 1_0\PanComPlus 1_0.vbproj", "{037F8C64-06A5-47B6-999A-26BC025F56EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{037F8C64-06A5-47B6-999A-26BC025F56EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{037F8C64-06A5-47B6-999A-26BC025F56EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{037F8C64-06A5-47B6-999A-26BC025F56EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{037F8C64-06A5-47B6-999A-26BC025F56EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
