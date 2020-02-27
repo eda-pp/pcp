@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationRevision>7</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -62,7 +62,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>pcp7.ico</ApplicationIcon>
+    <ApplicationIcon>pcp7a.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>441B46D0030609FDBF7B5808413BA2E15C14C9BD</ManifestCertificateThumbprint>
@@ -153,6 +153,9 @@
     <Content Include="pcp5.ico" />
     <Content Include="pcp6.ico" />
     <Content Include="pcp7.ico" />
+    <Content Include="pcp7a.ico" />
+    <Content Include="pcp8.ico" />
+    <Content Include="pcp9.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
